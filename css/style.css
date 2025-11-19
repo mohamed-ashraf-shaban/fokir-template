@@ -670,3 +670,150 @@ overflow: hidden;
 .footer span a{
     color: #ff305b;
 }
+/* Add at the very top - Mobile breakpoint improvements */
+@media (max-width: 576px) {
+    .header {
+        height: 100vh;
+        min-height: 500px;
+    }
+    
+    .main-text h4 {
+        font-size: 1.5rem !important;
+    }
+    
+    .main-text h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .main-text p {
+        font-size: 0.875rem !important;
+        padding: 0 15px;
+    }
+    
+    .Our-Services h2,
+    .our-portfolio h2,
+    .clients-feedback h2,
+    .our-blog h2,
+    .contact-us h2 {
+        font-size: 28px !important;
+    }
+    
+    .about-area .right-box h2 {
+        font-size: 24px !important;
+    }
+}
+
+/* Tablet Portrait: 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header .navbar {
+        padding: 10px 30px;
+    }
+    
+    .main-text h4 {
+        font-size: 2.5rem;
+    }
+    
+    .main-text h1 {
+        font-size: 3.5rem;
+    }
+    
+    .about-area {
+        width: 90%;
+    }
+    
+    .about-area .right-box {
+        padding-left: 30px;
+    }
+    
+    .Our-Services .services-box,
+    .portfolio-box {
+        margin-bottom: 30px;
+    }
+}
+
+/* Large Tablet/Small Desktop: 992px - 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-area {
+        width: 85%;
+    }
+    
+    .about-area .right-box {
+        padding-left: 50px;
+    }
+    
+    .main-text h4 {
+        font-size: 2.75rem;
+    }
+    
+    .main-text h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Improve portfolio responsiveness */
+@media (max-width: 767px) {
+    .our-portfolio ul {
+        padding: 0 15px;
+    }
+    
+    .our-portfolio ul li {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Better blog card spacing on tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .our-blog .blogs {
+        margin-bottom: 30px;
+    }
+}
+
+/* Improve contact form on small tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .user-info {
+        flex-direction: column;
+    }
+    
+    .input-container {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Fix image overflow issues */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improve button touch targets on mobile */
+@media (max-width: 767px) {
+    .about-area .right-box button,
+    .contact-us .submit {
+        min-height: 44px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .send-cv {
+        flex-direction: column;
+    }
+}
+
+/* Better statistic boxes on mobile */
+@media (max-width: 576px) {
+    .our-statistic .statistic-box {
+        margin-bottom: 30px;
+    }
+    
+    .our-statistic .statistic-box i {
+        font-size: 40px;
+    }
+    
+    .our-statistic .statistic-box span {
+        font-size: 32px;
+    }
+}
